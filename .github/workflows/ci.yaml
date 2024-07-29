@@ -85,7 +85,7 @@ jobs:
       run: |
         sed -i 's/tag: .*/tag: "${{github.run_id}}"/' helm/go-web-app-chart/values.yaml
 
-    - name: Commit and push changes
+    - name: Commit and push change
       run: |
         git config --global user.email "yuvikedari@gmail.com"
         git config --global user.name "yuvikedari"
